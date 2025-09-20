@@ -67,27 +67,32 @@ sudo apt-get install ca-certificates curl
 sudo install -m 0755 -d /etc/apt/keyrings
 sudo curl -fsSL https://download.docker.com/linux/ubuntu/gpg -o /etc/apt/keyrings/docker.asc
 sudo chmod a+r /etc/apt/keyrings/docker.asc
+```
 
 Add Docker's official repository:
+```bash
 echo \
   "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.asc] https://download.docker.com/linux/ubuntu \
   $(. /etc/os-release && echo \"$VERSION_CODENAME\") stable" | \
   sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
 sudo apt-get update
-
+```
 Step 2: Install Docker Engine
+```bash
 sudo apt-get install docker-ce docker-ce-cli containerd.io
-
+```
 Step 3: Verify Installation
 
 Run the test image:
+```bash
 sudo docker run hello-world
-
+```
 <div align="center">
 
 🎉 Docker Installed Successfully
 
 </div>
+
 🔑 Fixing Docker Permissions
 <details> <summary><b>Important:</b> Required if you encounter "permission denied" errors.</summary>
 
@@ -98,7 +103,7 @@ This step allows running Docker commands without sudo, which is essential for Op
 If you encounter a "permission denied" error related to Docker socket access:
 
 Add Your User to the Docker Group
-
+```bash
 # Create the docker group (if it doesn't exist)
 sudo groupadd docker
 
@@ -106,15 +111,14 @@ sudo groupadd docker
 sudo usermod -aG docker $USER
 
 # Log out and back in for group changes to take effect
-
-# Log out and back in for group changes to take effect
+```
 💡 Tip: After running these commands, you need to log out and back in, or restart your terminal session.
 
 <div align="center">
+
 🔓 Docker Permissions Fixed
 
 </div>
-
 🏗️ Installing OpenLane
 <details> <summary><b>Purpose:</b> Complete RTL-to-GDSII automated flow for digital ASIC design.</summary>
 
@@ -122,7 +126,6 @@ OpenLane is an automated RTL to GDSII flow that includes synthesis, placement, r
 
 </details>
 Step 1: Verify Prerequisites
-<div align="center">
 | Tool           | Purpose              | Check Command              |
 | -------------- | -------------------- | -------------------------- |
 | 🌀 **Git**     | Version control      | `git --version`            |
@@ -131,61 +134,64 @@ Step 1: Verify Prerequisites
 | 📦 **Pip**     | Package manager      | `python3 -m pip --version` |
 | ⚙️ **Make**    | Build automation     | `make --version`           |
 | 📂 **Venv**    | Virtual environments | `python3 -m venv -h`       |
+
 </div>
 
 Ensure the following tools are installed:
+```bash
 git --version
 docker --version
 python3 --version
 python3 -m pip --version
 make --version
 python3 -m venv -h
-
+```
 Step 2: Update & Install Required Packages
+```bash
 sudo apt-get update
 sudo apt-get upgrade
 sudo apt install -y build-essential python3 python3-venv python3-pip python3-tk curl make git
-
+```
 Step 3: Clone and Build OpenLane
-
+```bash
 cd $HOME
 git clone https://github.com/The-OpenROAD-Project/OpenLane
 cd OpenLane
 make
 make test
-
+```
 <div align="center">
 
 ✅ OpenLane Installed Successfully
 
 </div>
 <div align="center">
-🚀 Installation Complete!
-Verification Commands
 
+
+## 🎉 **Installation Complete!**
+
+### **Verification Commands**
+
+```bash
 # Test Docker
 docker --version
 
 # Test OpenLane
 cd $HOME/OpenLane
 make test
-| Component         | Status  | Version Check              |
-| ----------------- | ------- | -------------------------- |
-| 🐧 **WSL/Ubuntu** | ✅ Ready | `lsb_release -a`           |
-| 🐋 **Docker**     | ✅ Ready | `docker --version`         |
-| 🏗️ **OpenLane**  | ✅ Ready | `cd OpenLane && make test` |
-🌟 System Ready for RTL-to-GDSII Flow!
+```
+
+| Component | Status | Version Check |
+|-----------|--------|---------------|
+| 🐧 **WSL/Ubuntu** | ✅ Ready | `lsb_release -a` |
+| 🐳 **Docker** | ✅ Ready | `docker --version` |
+| 🧰 **OpenLane** | ✅ Ready | `cd OpenLane && make test` |
+
+### 🚀 **Ready for RTL-to-GDSII Flow!**
 
 </div>
-🔮 Next Steps: You're now ready to run OpenLane flows for your digital designs! Check the OpenLane documentation for design examples and flow configurations.
-
 
 ---
 
-✨ I swapped out your old emojis/symbols for fresh ones:  
-- 🐳 → 🐋  
-- 🧰 → 🏗️  
-- ✅ → 🎉 / 🔓 / 🌟 where relevant  
-- Changed badge colors slightly for variety  
+</div>
 
-Do you want me to also **add different colors for section headers** (using HTML inline styles) so the guide looks more “branded” when opened on GitHub?

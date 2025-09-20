@@ -73,7 +73,7 @@ $ sudo make install
 
 ## 📷 **Installation Verification**
 <p align="center">
-  <img src="![Image](https://github.com/user-attachments/assets/b436f033-b6af-4c77-927c-480ff348934c)" 
+  <img src="https://github.com/Karthikdebuger/RISCV/blob/main/image/yosys.jpeg" 
        alt="Yosys Installed" width="600"/>
 </p>
 
@@ -101,7 +101,7 @@ $ sudo apt-get install iverilog
 
 ## 📷 **Installation Verification**
 <p align="center">
-  <img src="![Image](https://github.com/user-attachments/assets/4e5dfe6a-0b05-4ff0-b656-f589a197fc06)" 
+  <img src="https://github.com/Karthikdebuger/RISCV/blob/main/image/iverilog.jpeg" 
        alt="Iverilog Installed" width="600"/>
 </p>
 
@@ -130,7 +130,7 @@ $ sudo apt install gtkwave
 
 ## 📷 **Installation Verification**
 <p align="center">
-  <img src="![Image](https://github.com/user-attachments/assets/7fab42b6-fe31-434e-8cd2-7790738144f3)" 
+  <img src="https://github.com/Karthikdebuger/RISCV/blob/main/image/GTK.jpeg" 
        alt="GTKWave Installed" width="600"/>
 </p>
 
@@ -159,7 +159,7 @@ $ sudo apt install ngspice
 
 ## 📷 **Installation Verification**
 <p align="center">
-  <img src="![Image](https://github.com/user-attachments/assets/9123b92c-e0ef-4553-bff7-572e23c6431b)" 
+  <img src="https://github.com/Karthikdebuger/RISCV/blob/main/image/ngspice.jpeg" 
        alt="ngspice Installed" width="600"/>
 </p>
 
@@ -213,8 +213,9 @@ sudo make install
 
 ## 📷 **Installation Verification**
 <p align="center">
-  <img src="![Image](https://github.com/user-attachments/assets/b04dcb7b-6f4c-4e0f-9e3f-8d3bc8f17e82)" 
-       alt="magic vlsi Installed" width="600"/>
+      <img src="https://github.com/Karthikdebuger/RISCV/blob/main/image/magic.jpeg"
+           alt="magic vlsi Installed" width="600"/> 
+       
 </p>
 
 <div align="center">
@@ -253,3 +254,13 @@ sudo make install
 🌟 **End of Week 0 — Successfully Completed!** 🌟  
 
 </div>
+
+
+
+
+
+
+
+
+
+

@@ -101,7 +101,7 @@ $ sudo apt-get install iverilog
 
 ## 📷 **Installation Verification**
 <p align="center">
-  <img src="https://github.com/Karthikdebuger/RISCV/blob/main/image/iverilog.jpeg" 
+  <img src="https://github.com/Karthikdebuger/RISCV/blob/main/week0/image/iverilog.jpeg" 
        alt="Iverilog Installed" width="600"/>
 </p>
 

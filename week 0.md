@@ -130,7 +130,7 @@ $ sudo apt install gtkwave
 
 ## 📷 **Installation Verification**
 <p align="center">
-  <img src="![Image](https://github.com/user-attachments/assets/7fab42b6-fe31-434e-8cd2-7790738144f3)" 
+  <img src="https://github.com/Karthikdebuger/RISCV/blob/main/image/GTK.jpeg" 
        alt="GTKWave Installed" width="600"/>
 </p>
 
@@ -254,6 +254,7 @@ sudo make install
 🌟 **End of Week 0 — Successfully Completed!** 🌟  
 
 </div>
+
 
 
 

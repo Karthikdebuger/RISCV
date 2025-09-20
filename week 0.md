@@ -213,7 +213,7 @@ sudo make install
 
 ## 📷 **Installation Verification**
 <p align="center">
-      ![magicv](image\magic.jpeg) 
+      ![magicv](https://github.com/Karthikdebuger/RISCV/blob/main/image/magic.jpeg) 
        
 </p>
 
@@ -253,5 +253,6 @@ sudo make install
 🌟 **End of Week 0 — Successfully Completed!** 🌟  
 
 </div>
+
 
 

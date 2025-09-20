@@ -28,60 +28,86 @@ This repository documents my **week-by-week progress**, with tasks organized und
 
 ---
 
-## 📅 **Week 0 — Setup & Tools**
+# 📝 Task 1 — Documentation of Digital VLSI SoC Design and Planning  
 
-<details>
-<summary><b>🛠️ Foundation Week: Environment Setup and Tool Installation</b></summary>
-
-This week focused on preparing the development environment with essential open-source EDA tools for the complete RTL-to-GDSII flow.
-
-### 🛠️ **Tasks Overview**
-
-| Task | Description | Tools Installed | Status |
-|------|-------------|-----------------|--------|
-| **Task 0** | 🛠️ [Tools Installation](https://github.com/TheVoltageVikingRam/RTL2GDS_Alchemy/tree/main/Week0) | **Complete EDA Toolchain Setup** | ✅ Done |
-
-### 📦 **Tools Installed in Week 0 — Task 0**
-
-#### **Core RTL Design & Synthesis Tools**
-
-| Tool | Purpose | Verification |
-|------|---------|--------------|
-| 🧠 **Yosys** | RTL Synthesis & Logic Optimization | ✅ Verified |
-| 📟 **Iverilog** | Verilog Simulation & Compilation | ✅ Verified |
-| 📊 **GTKWave** | Waveform Viewer & Analysis | ✅ Verified |
-| ⚡ **Ngspice** | Analog & Mixed-Signal Simulation | ✅ Verified |
-| 🎨 **Magic VLSI** | Layout Design & DRC Verification | ✅ Verified |
-
-#### **Advanced Flow Tools**
-
-| Tool | Purpose | Verification |
-|------|---------|--------------|
-| 🐳 **Docker** | Containerization Platform | ✅ Verified |
-| 🌊 **OpenLane** | Complete RTL-to-GDSII Flow | ✅ Verified |
-
-### 🌟 **Key Learnings from Week 0**
-
-- Successfully installed and verified the **open-source EDA tools ecosystem**  
-- Mastered **environment setup** for professional RTL design and synthesis workflows  
-- Prepared a **comprehensive system** for upcoming RTL → GDSII experiments  
-- Established a **Docker-based OpenLane** environment for automated design flows  
-- Configured a **virtual machine** with optimal specifications for EDA workloads  
-
-</details>
+## 📌 Introduction  
+This document provides a **summary of Digital VLSI SoC Design and Planning**, highlighting the complete flow from **chip modeling** to **GDSII tapeout**.  
+It explains the design methodology, verification steps, and the importance of modular **System-on-Chip (SoC)** integration.  
 
 ---
 
-## 🎯 **Program Objectives & Scope**
+### Workflow Steps
 
-| Aspect | Details |
-|--------|---------|
-| 🎓 **Learning Path** | Complete SoC Design: RTL → Synthesis → Physical Design → Tapeout |
-| 🛠️ **Tools Focus** | Open-Source EDA Ecosystem (Yosys, OpenLane, Magic, etc.) |
-| 🏭 **Industry Relevance** | Real-world semiconductor design methodologies |
-| 🤝 **Collaboration** | Part of India’s largest RISC-V tapeout initiative |
-| 📈 **Scale** | 3500+ participants contributing to silicon advancement |
-| 🇮🇳 **National Impact** | Strengthening India’s semiconductor ecosystem |
+## 🔹 O1 — Chip Modeling
+- Starts with **application specifications** (C model).  
+- Functionality validated using a **C testbench**.  
+- Ensures correctness of design intent **before RTL implementation**.  
+
+---
+
+## 🔹 O2 — RTL Architecture 
+- Hardware functionality described using **RTL (Verilog)** → *soft copy of hardware*.  
+- Design partitioned into main modules:  
+  - 🖥️ **Processor**  
+  - 🔌 **Peripherals / IPs**  
+- Verified against the C specification to ensure functional equivalence.  
+
+---
+
+## 🔹 Synthesis & Netlist Generation  
+- RTL synthesized into a **Gate-Level Netlist (GLN)**.  
+- Outputs include:  
+  - ✅ Synthesized Gate-Level Netlist  
+  - ✅ Standard cell libraries and macros  
+  - ✅ Analog IPs (PLL, Clock multipliers, SRAM models)  
+
+---
+
+## 🔹 O3 — SoC Integration  
+- Combines **Processor + Peripherals + IPs** into a complete SoC.  
+- All blocks are combined (Processor, IPs, Macros, Analog IPs).  
+- Integration also involves GPIOs and interconnects.  
+
+---
+
+## 🔹 Physical Design  
+- Involves physical design steps:  
+  - 📐 Floorplanning  
+  - 🕒 Clock Tree Synthesis (CTS)  
+  - 🛠️ Placement & Routing  
+- Hardened macros and analog IP libraries are included.  
+- Generates the final **GDSII file** for fabrication.  
+
+---
+
+## 🔹 Physical Verification & Fabrication
+- ✅ **DRC (Design Rule Check):** Ensures layout follows foundry rules.  
+- ✅ **LVS (Layout vs Schematic):** Confirms physical layout matches RTL netlist.  
+- GDSII is sent for fabrication to produce the final chip.  
+
+---
+
+## 🔹 O4 — Final SoC  
+- Operates within **100 MHz – 130 MHz** range.  
+- Reusable SoC platform adaptable to multiple end-user applications:  
+  - ⌚ iWatch  
+  - 🔌 Arduino Boards  
+  - 📺 TV Panels  
+  - ❄️ AC Systems  
+
+---
+
+## ✅ Key Takeaways  
+- **End-to-End Flow:** Specs → RTL → Synthesis → SoC Integration → Verification → TapeIn → Industry → Tapeout → Chip.  
+- **Verification at every stage** ensures reliability and manufacturability.  
+- **Scalable modular design** enables targeting diverse real-world applications.  
+- **Key Outputs:**  
+  - O1: Specs in C (with testbench)  
+  - O2: RTL in Verilog  
+  - O3: Integrated SoC (netlist + macros)  
+  - O4: Final SoC  
+- **Equivalence:** O1 == O2 == O3 == O4  
+
 
 ---
 

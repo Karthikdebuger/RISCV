@@ -213,7 +213,7 @@ sudo make install
 
 ## 📷 **Installation Verification**
 <p align="center">
-      ![Image](image\magic.jpeg)" 
+      ![magicv](image\magic.jpeg) 
        
 </p>
 
@@ -253,4 +253,5 @@ sudo make install
 🌟 **End of Week 0 — Successfully Completed!** 🌟  
 
 </div>
+
 

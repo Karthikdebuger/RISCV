@@ -73,7 +73,7 @@ $ sudo make install
 
 ## 📷 **Installation Verification**
 <p align="center">
-  <img src="![Image](https://github.com/user-attachments/assets/b436f033-b6af-4c77-927c-480ff348934c)" 
+  <img src="https://github.com/Karthikdebuger/RISCV/blob/main/image/yosys.jpeg" 
        alt="Yosys Installed" width="600"/>
 </p>
 
@@ -254,6 +254,7 @@ sudo make install
 🌟 **End of Week 0 — Successfully Completed!** 🌟  
 
 </div>
+
 
 
 

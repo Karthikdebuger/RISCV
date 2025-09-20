@@ -167,20 +167,32 @@ make test
 </div>
 <div align="center">
 🚀 Installation Complete!
-Verification Commands
+<div align="center">
+
+## 🎉 **Installation Complete!**
+
+### **Verification Commands**
+
 ```bash
- # Test Docker
+# Test Docker
 docker --version
+
 # Test OpenLane
 cd $HOME/OpenLane
 make test
 ```
-| Component         | Status  | Version Check              |
-| ----------------- | ------- | -------------------------- |
-| 🐧 **WSL/Ubuntu** | ✅ Ready | `lsb_release -a`           |
-| 🐋 **Docker**     | ✅ Ready | `docker --version`         |
-| 🏗️ **OpenLane**  | ✅ Ready | `cd OpenLane && make test` |
- 
-🌟 System Ready for RTL-to-GDSII Flow!
+
+| Component | Status | Version Check |
+|-----------|--------|---------------|
+| 🐧 **WSL/Ubuntu** | ✅ Ready | `lsb_release -a` |
+| 🐳 **Docker** | ✅ Ready | `docker --version` |
+| 🧰 **OpenLane** | ✅ Ready | `cd OpenLane && make test` |
+
+### 🚀 **Ready for RTL-to-GDSII Flow!**
 
 </div>
+
+---
+
+</div>
+

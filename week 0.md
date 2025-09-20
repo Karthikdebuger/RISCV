@@ -213,7 +213,8 @@ sudo make install
 
 ## 📷 **Installation Verification**
 <p align="center">
-      <img src="https://github.com/Karthikdebuger/RISCV/blob/main/image/magic.jpeg"> 
+      <img src="https://github.com/Karthikdebuger/RISCV/blob/main/image/magic.jpeg"
+           alt="magic vlsi Installed" width="600"/> 
        
 </p>
 
@@ -253,6 +254,7 @@ sudo make install
 🌟 **End of Week 0 — Successfully Completed!** 🌟  
 
 </div>
+
 
 
 

@@ -159,7 +159,7 @@ $ sudo apt install ngspice
 
 ## 📷 **Installation Verification**
 <p align="center">
-  <img src="https://github.com/Karthikdebuger/RISCV/blob/main/image/ngspice.jpeg" 
+  <img src="https://github.com/Karthikdebuger/RISCV/blob/main/week0/image/ngspice.jpeg" 
        alt="ngspice Installed" width="600"/>
 </p>
 

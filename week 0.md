@@ -159,7 +159,7 @@ $ sudo apt install ngspice
 
 ## 📷 **Installation Verification**
 <p align="center">
-  <img src="![Image](https://github.com/user-attachments/assets/9123b92c-e0ef-4553-bff7-572e23c6431b)" 
+  <img src="https://github.com/Karthikdebuger/RISCV/blob/main/image/ngspice.jpeg" 
        alt="ngspice Installed" width="600"/>
 </p>
 
@@ -253,6 +253,7 @@ sudo make install
 🌟 **End of Week 0 — Successfully Completed!** 🌟  
 
 </div>
+
 
 
 

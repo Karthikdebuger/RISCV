@@ -166,8 +166,7 @@ make test
 
 </div>
 <div align="center">
-🚀 Installation Complete!
-<div align="center">
+
 
 ## 🎉 **Installation Complete!**
 
@@ -195,4 +194,5 @@ make test
 ---
 
 </div>
+
 
